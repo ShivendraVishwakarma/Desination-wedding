@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations | Destination Wedding India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top"><div class="container"><a class="navbar-brand" href="index.html">Destination<span class="brand-mark">Wedding</span>India</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="mainNavbar"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link" data-nav-link href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" data-nav-link href="destinations.html">Destinations</a></li><li class="nav-item"><a class="nav-link" data-nav-link href="packages.html">Packages</a></li><li class="nav-item"><a class="nav-link" data-nav-link href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" data-nav-link href="about.html">About</a></li><li class="nav-item"><a class="btn-luxury ms-lg-2" href="contact.html">Plan Wedding</a></li></ul></div></div></nav>
+
+  <header class="page-hero">
+    <img src="assets/images/hero-indian-mandap.jpg" alt="Indian wedding destination">
+    <div class="container page-hero-content">
+      <span class="eyebrow">Explore India</span>
+      <h1>Destination Wedding Locations</h1>
+      <p>Compare Goa, Udaipur, Jaipur, Kerala, Manali, and Rishikesh by wedding type, budget, season, and guest experience.</p>
+    </div>
+  </header>
+
+  <main class="section section-muted">
+    <div class="container">
+      <form class="filter-bar" id="destinationFilterForm">
+        <input class="form-control" type="search" name="search" placeholder="Search destination">
+        <select class="form-select" name="state"><option value="">All states</option></select>
+        <select class="form-select" name="type">
+          <option value="">All wedding types</option>
+          <option>Beach Wedding</option>
+          <option>Royal Palace Wedding</option>
+          <option>Heritage Wedding</option>
+          <option>Luxury Traditional Wedding</option>
+          <option>Mountain Wedding</option>
+          <option>Intimate Spiritual Wedding</option>
+        </select>
+        <button class="btn-luxury" type="reset">Reset</button>
+      </form>
+      <div class="row g-4" id="destinationsGrid"></div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="destinationModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><img data-modal-image src="" alt="" class="w-100" style="height:300px;object-fit:cover;"><div class="modal-body p-4"><h2 data-modal-title></h2><p class="fw-bold text-danger" data-modal-type></p><p class="text-muted" data-modal-description></p><div class="modal-facts" data-modal-facts></div><div class="d-flex flex-wrap gap-2 my-4" data-modal-highlights></div><a class="btn-luxury" href="contact.html">Enquire Now</a></div></div></div></div>
+  <footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-6"><h5>Destination Wedding India</h5><p>Premium destination wedding planning across India.</p></div><div class="col-lg-3"><h6>Links</h6><p><a href="packages.html">Packages</a></p><p><a href="gallery.html">Gallery</a></p></div><div class="col-lg-3"><h6>Start</h6><p><a href="contact.html">Plan your wedding</a></p><p>+91 98765 43210</p></div></div><div class="footer-bottom">© 2026 Destination Wedding India.</div></div></footer>
+  <button class="btn-luxury back-to-top" id="backToTop" type="button"><i class="bi bi-arrow-up"></i></button><div class="toast-container position-fixed top-0 end-0 p-3"><div id="siteToast" class="toast text-bg-success"><div class="toast-body"></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="data/destinations.js"></script><script src="data/packages.js"></script><script src="data/testimonials.js"></script><script src="data/gallery.js"></script><script src="js/utils.js"></script><script src="js/destination.js"></script><script src="js/package.js"></script><script src="js/gallery.js"></script><script src="js/contact.js"></script><script src="js/app.js"></script>
+</body>
+</html>
